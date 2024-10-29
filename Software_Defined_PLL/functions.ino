@@ -1,4 +1,3 @@
-#define alpha 0.5
 
 /**
  * average_shift - determines the average phase shift between 
@@ -9,7 +8,7 @@
  * Return: the phase shift in degrees.
  */
 
-float average_shift(float mixed_signal, float previous_signal)
+float average_shift(double mixed_signal, double previous_signal)
 {
 	return lowPass_filter(mixed_signal, previous_signal);
 }
@@ -23,7 +22,4 @@ float average_shift(float mixed_signal, float previous_signal)
  * Return: dc offset signal correlating to the phase shift.
  *
  */
-float lowPass_filter(float mixed_signal, float previous_signal)
-{
-	return alpha * mixed_signal + (1 - alpha) * previous_signal;
-}
+
