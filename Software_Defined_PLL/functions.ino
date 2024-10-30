@@ -1,4 +1,4 @@
-#define ALPHA 0.01
+#define ALPHA 0.009
 
 /**
  * average_shift - determines the average phase shift between 
