@@ -3,15 +3,25 @@
 #define PI 3.141592654
 #define OMEGA 2 * PI * CARRIER_FREQUENCY
 #define SAMPLING_FREQUENCY 300000
-#define ALPHA 0.019
 
-double offset_angle = 0.0;
-double step = 1.0;
-double received_signal = 0.0;
+double offset_angle_to_oscillator = 0.9;
 double oscillator_signal = 0.0;
-double previous_signal = 0.0;
+
+double I_channel_mixed_signal = 0.0;
+double Q_channel_mixed_signal = 0.0;
+
+double I_offset_angle = 0.0;
+double I_previous_offset_angle = 0.0;
+
+double Q_offset_angle = 0.0;
+double Q_previous_offset_angle = 0.0;
+
+double phase_discriminator = 0.0;
+double discriminator_prev = 0.0;
+
+double signal = 0.0;
 double angle = 0.0;
-double mixed_signal = 0.0;
+
 
 void setup()
 {
@@ -20,29 +30,65 @@ void setup()
 
 void loop()
 {
+  double step = 0;
   for (step = 0; step < SAMPLING_FREQUENCY; step++)
   {
       angle = OMEGA * step / SAMPLING_FREQUENCY;
-      received_signal = cos(angle);
-      oscillator_signal = cos(angle);
-      mixed_signal = received_signal * oscillator_signal;
-      offset_angle = lowPass_filter(mixed_signal, previous_signal);
-      previous_signal = offset_angle;  
-      Serial.println(acos(offset_angle * 2) * 180 / PI);  
+      signal = cos(angle);
+
+      I_channel_mixed_signal = signal * cos(angle +  offset_angle_to_oscillator);
+      Q_channel_mixed_signal = signal * sin(angle +  offset_angle_to_oscillator);
+
+      I_offset_angle = lowPass_filter(I_channel_mixed_signal, I_previous_offset_angle);
+      I_previous_offset_angle = I_offset_angle;
+     
+      Q_offset_angle = lowPass_filter(Q_channel_mixed_signal,  Q_previous_offset_angle);
+      Q_previous_offset_angle = Q_offset_angle; 
+
+
+      //phase discriminator
+      phase_discriminator = lowPass_filter(I_offset_angle * Q_offset_angle, discriminator_prev);
+      discriminator_prev = phase_discriminator;
+
+      offset_angle_to_oscillator = phase_discriminator * -1; 
+
+
+     
+
+      Serial.print("Q: ");
+      Serial.println(Q_offset_angle);
+
+      Serial.print("I: ");
+      Serial.println(I_offset_angle);
+      Serial.println(offset_angle_to_oscillator, 6);
+
+
+    
+     
   }
 }
 
 
-/**
- * lowPass_filter - removes the high frequency signal after the mixing
- * process.
- *
- * @mixed_signal: the signal as a result of mixing.
- * @previous_signal: previously output signal.
- * Return: dc offset signal correlating to the phase shift.
- *
- */
-float lowPass_filter(double mixed_signal, double previous_signal)
-{
-	return ALPHA * mixed_signal + (1 - ALPHA) * previous_signal;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
