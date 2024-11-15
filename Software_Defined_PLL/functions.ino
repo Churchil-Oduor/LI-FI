@@ -1,18 +1,4 @@
-#define ALPHA 0.009
-
-/**
- * average_shift - determines the average phase shift between 
- * the received signal and the local oscillator.
- * @received_signal: signal received.
- * @local_osc: output of the local oscillator.
- * @previous_signal: previous output signal.
- * Return: the phase shift in degrees.
- */
-
-float average_shift(double mixed_signal, double previous_signal)
-{
-	return lowPass_filter(mixed_signal, previous_signal);
-}
+#define ALPHA 0.005
 
 /**
  * lowPass_filter - removes the high frequency signal after the mixing

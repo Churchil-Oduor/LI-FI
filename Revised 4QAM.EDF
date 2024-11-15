@@ -1,0 +1,644 @@
+(PCB Revised_4QAM
+ (parser
+  (host_cad ARES)
+  (host_version 8.13 SP0)
+ )
+ (resolution mm 100000)
+ (unit mm)
+ (structure
+  (boundary (rect pcb 45.23940 11.45100 84.50960 62.26060))
+  (flip_style mirror_first)
+  (layer TOP (type signal) (direction horizontal))
+  (layer I1 (type signal) (direction off))
+  (layer I2 (type signal) (direction off))
+  (layer I3 (type signal) (direction off))
+  (layer I4 (type signal) (direction off))
+  (layer I5 (type signal) (direction off))
+  (layer I6 (type signal) (direction off))
+  (layer I7 (type signal) (direction off))
+  (layer I8 (type signal) (direction off))
+  (layer I9 (type signal) (direction off))
+  (layer I10 (type signal) (direction off))
+  (layer I11 (type signal) (direction off))
+  (layer I12 (type signal) (direction off))
+  (layer I13 (type signal) (direction off))
+  (layer I14 (type signal) (direction off))
+  (layer BOT (type signal) (direction vertical))
+  (grid via  0.63500)
+  (grid wire 0.63500)
+  (control
+   (via_at_smd off)
+   (off_grid on)
+  )
+  (via
+   $VIA#0_SIGNAL
+   (spare
+    $VIA#0_POWER
+    PS3
+   )
+  )
+  (rule
+   (width 0.25400)
+   (clearance 0.38100)
+   (clearance 0.25400 (type wire_via))
+   (clearance 0.25400 (type wire_smd))
+   (clearance 0.25400 (type wire_pin))
+   (clearance 0.25400 (type wire_wire))
+   (clearance 0.25400 (type via_pin))
+   (clearance 0.25400 (type via_via))
+   (clearance 0.25400 (type via_smd))
+  )
+ )
+ (placement
+  (component "RES40_OSC R7" (place "OSC R7" 47.50000 32.50000 front 90))
+  (component "RES40_OSC R11" (place "OSC R11" 47.50000 22.66000 front -90))
+  (component "RES40_OSC R6" (place "OSC R6" 52.50000 42.50000 front -90))
+  (component "RES40_OSC R12" (place "OSC R12" 52.50000 22.50000 front -90))
+  (component "TO18_OSC Q3" (place "OSC Q3" 51.23000 27.50000 front -90))
+  (component "CAP10_OSC C7" (place "OSC C7" 57.50000 20.00000 front -90))
+  (component "CAP10_OSC C5" (place "OSC C5" 57.50000 40.00000 front -90))
+  (component "CAP10_OSC C8" (place "OSC C8" 57.50000 30.04000 front -90))
+  (component IND_LQH32PN470MN0L_L1 (place L1 62.50000 36.27508 back 90))
+  (component "CAP10_OSC C9" (place "OSC C9" 62.50000 30.00000 front -90))
+  (component "CAP10_OSC C6" (place "OSC C6" 52.50000 47.50000 front 180))
+  (component "RES40_I-R1" (place "I-R1" 67.50000 30.00000 front -90))
+  (component "RES40_I- SCALING RESISTOR" (place "I- SCALING RESISTOR" 57.50000 12.50000 front 0
+  ))
+  (component "TO18_I- Q1" (place "I- Q1" 73.77000 20.00000 front 0))
+  (component "RES40_I-R5" (place "I-R5" 47.50000 55.00000 front 0))
+  (component "CAP10_Q - C1" (place "Q - C1" 67.50000 34.96000 front 90))
+  (component "RES40_Q- R2" (place "Q- R2" 67.50000 42.50000 front 90))
+  (component "TO18_Q- Q5" (place "Q- Q5" 80.00000 17.50000 front -90))
+  (component "RES40_Q- R13" (place "Q- R13" 47.50000 60.00000 front 0))
+  (component "RES40_Q - R8" (place "Q - R8" 72.50000 52.50000 front -90))
+ )
+ (library
+  (image "RES40_OSC R7" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "RES40_OSC R11" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "RES40_OSC R6" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "RES40_OSC R12" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "TO18_OSC Q3" (side front)
+   (outline (rect TOP -2.64160 -2.64160 2.64160 2.98560))
+   (pin PS1 (rotate 0) 0 1.27000 0.00000)
+   (pin PS1 (rotate 0) 1 0.00000 1.27000)
+   (pin PS1 (rotate 0) 2 -1.27000 0.00000)
+  )
+  (image "CAP10_OSC C7" (side front)
+   (outline (rect TOP -1.37160 -1.37160 3.91160 1.37160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+  )
+  (image "CAP10_OSC C5" (side front)
+   (outline (rect TOP -1.37160 -1.37160 3.91160 1.37160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+  )
+  (image "CAP10_OSC C8" (side front)
+   (outline (rect TOP -1.37160 -1.37160 3.91160 1.37160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+  )
+  (image IND_LQH32PN470MN0L_L1 (side back)
+   (outline (rect TOP -2.17500 -1.52500 2.17500 1.52500))
+   (pin PS2 (rotate 0) 0 -1.27508 0.00000)
+   (pin PS2 (rotate 0) 1 1.27508 0.00000)
+  )
+  (image "CAP10_OSC C9" (side front)
+   (outline (rect TOP -1.37160 -1.37160 3.91160 1.37160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+  )
+  (image "CAP10_OSC C6" (side front)
+   (outline (rect TOP -1.37160 -1.37160 3.91160 1.37160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+  )
+  (image "RES40_I-R1" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "RES40_I- SCALING RESISTOR" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "TO18_I- Q1" (side front)
+   (outline (rect TOP -2.64160 -2.64160 2.64160 2.98560))
+   (pin PS1 (rotate 0) 0 1.27000 0.00000)
+   (pin PS1 (rotate 0) 1 0.00000 1.27000)
+   (pin PS1 (rotate 0) 2 -1.27000 0.00000)
+  )
+  (image "RES40_I-R5" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "CAP10_Q - C1" (side front)
+   (outline (rect TOP -1.37160 -1.37160 3.91160 1.37160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+  )
+  (image "RES40_Q- R2" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "TO18_Q- Q5" (side front)
+   (outline (rect TOP -2.64160 -2.64160 2.64160 2.98560))
+   (pin PS1 (rotate 0) 0 1.27000 0.00000)
+   (pin PS1 (rotate 0) 1 0.00000 1.27000)
+   (pin PS1 (rotate 0) 2 -1.27000 0.00000)
+  )
+  (image "RES40_Q- R13" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (image "RES40_Q - R8" (side front)
+   (outline (rect TOP -0.88900 -0.88900 11.04900 0.88900))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 10.16000 0.00000)
+  )
+  (padstack PS0 (absolute on)
+   (shape (circle TOP 1.77800 0 0))
+   (shape (circle I1 1.77800 0 0))
+   (shape (circle I2 1.77800 0 0))
+   (shape (circle I3 1.77800 0 0))
+   (shape (circle I4 1.77800 0 0))
+   (shape (circle I5 1.77800 0 0))
+   (shape (circle I6 1.77800 0 0))
+   (shape (circle I7 1.77800 0 0))
+   (shape (circle I8 1.77800 0 0))
+   (shape (circle I9 1.77800 0 0))
+   (shape (circle I10 1.77800 0 0))
+   (shape (circle I11 1.77800 0 0))
+   (shape (circle I12 1.77800 0 0))
+   (shape (circle I13 1.77800 0 0))
+   (shape (circle I14 1.77800 0 0))
+   (shape (circle BOT 1.77800 0 0))
+  )
+  (padstack PS1 (absolute on)
+   (shape (circle TOP 1.27000 0 0))
+   (shape (circle I1 1.27000 0 0))
+   (shape (circle I2 1.27000 0 0))
+   (shape (circle I3 1.27000 0 0))
+   (shape (circle I4 1.27000 0 0))
+   (shape (circle I5 1.27000 0 0))
+   (shape (circle I6 1.27000 0 0))
+   (shape (circle I7 1.27000 0 0))
+   (shape (circle I8 1.27000 0 0))
+   (shape (circle I9 1.27000 0 0))
+   (shape (circle I10 1.27000 0 0))
+   (shape (circle I11 1.27000 0 0))
+   (shape (circle I12 1.27000 0 0))
+   (shape (circle I13 1.27000 0 0))
+   (shape (circle I14 1.27000 0 0))
+   (shape (circle BOT 1.27000 0 0))
+  )
+  (padstack PS2 (absolute on) (shape (rect BOT -0.62500 -1.00000 0.62500 1.00000)))
+  (padstack PS3 (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+  (padstack $VIA#0_SIGNAL (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+  (padstack $VIA#0_POWER (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+ )
+ (network
+  (net "#00026"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "I- Q1"-1 "I-R5"-1)
+  )
+  (net "#00030"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "Q- Q5"-1 "Q- R13"-1)
+  )
+  (net "#00034"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "#00035"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "#00036"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "#00045"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "#00046"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "#00047"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "#00055"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "#00058"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "#00059"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "#00062"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "OSC R7"-0 "OSC R11"-0 "OSC Q3"-1 "OSC C6"-1)
+  )
+  (net "#00063"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "OSC R6"-1 "OSC Q3"-2 "OSC C5"-0)
+  )
+  (net "#00064"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "OSC R12"-0 "OSC Q3"-0 "OSC C7"-0)
+  )
+  (net "#00067"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "OSC C5"-1 "OSC C8"-0 L1-0)
+  )
+  (net "GND"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_POWER
+    )
+   )
+    (pins "OSC R11"-1 "OSC R12"-1 "OSC C7"-1 "OSC C8"-1 "OSC C9"-1 "I- SCALING RESISTOR"-0
+    "I- Q1"-0 "Q- Q5"-0 "Q - R8"-0)
+  )
+  (net "I-SIGNAL OUTPUT"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "I-R1"-1 "I- SCALING RESISTOR"-1 "I- Q1"-2)
+  )
+  (net "MCU I-SIGNAL"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "I-R5"-0)
+  )
+  (net "MCU Q-SIGNAL"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "Q- R13"-0)
+  )
+  (net "OSCILLATOR"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "PHASE SHIFTED OSC"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "Q - C1"-1 "Q- R2"-0 "Q - R8"-1)
+  )
+  (net "POWER"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "OSC R7"-1 "OSC R6"-0)
+  )
+  (net "Q-SIGNAL OUTPUT"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "Q- R2"-1 "Q- Q5"-2)
+  )
+  (net "REAL OSC"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins L1-1 "OSC C9"-0 "OSC C6"-0 "I-R1"-0 "Q - C1"-0)
+  )
+  (net "SUMMED SIGNAL"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "TO BULB"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (net "VCC"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins)
+  )
+  (class POWER
+   "GND"
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+  (class SIGNAL
+   "#00026"
+   "#00030"
+   "#00034"
+   "#00035"
+   "#00036"
+   "#00045"
+   "#00046"
+   "#00047"
+   "#00055"
+   "#00058"
+   "#00059"
+   "#00062"
+   "#00063"
+   "#00064"
+   "#00067"
+   "I-SIGNAL OUTPUT"
+   "MCU I-SIGNAL"
+   "MCU Q-SIGNAL"
+   "OSCILLATOR"
+   "PHASE SHIFTED OSC"
+   "POWER"
+   "Q-SIGNAL OUTPUT"
+   "REAL OSC"
+   "SUMMED SIGNAL"
+   "TO BULB"
+   "VCC"
+   "{NC}"
+   "{VOID}"
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+ )
+ (wiring
+   (wire (path TOP 0.25400 57.50000 27.50000 62.46000 27.50000 62.50000 27.46000) (net "GND")
+   (type protect))
+   (wire (path TOP 0.25400 52.50000 22.50000 55.00000 22.50000 57.50000 20.00000) (net "#00064")
+   (type protect))
+   (wire (path TOP 0.25400 57.50000 17.46000 57.83630 17.79630 59.57240 17.79630 59.82896 18.05286
+    59.82896 22.15792 57.50000 24.48688 57.50000 27.50000) (net "GND") (type protect)
+  )
+   (wire (path TOP 0.25400 47.50000 12.50000 52.34000 12.50000 52.50000 12.34000) (net "GND")
+   (type protect))
+   (wire (path TOP 0.25400 47.50000 32.50000 45.06152 34.93848 45.06152 44.40753 47.71966 47.06567
+    48.90106 47.06567 49.52567 47.06567 49.96000 47.50000) (net "#00062") (type protect)
+  )
+   (wire (path TOP 0.25400 62.21200 35.22443 62.61411 34.82232 65.89801 34.82232 65.83099 34.88934
+    65.83099 38.44130 56.77229 47.50000 52.50000 47.50000) (net "REAL OSC") (type protect)
+  )
+   (wire (path TOP 0.25400 57.50000 37.46000 62.46000 37.46000 62.50000 37.50000) (net "#00067")
+   (type protect))
+   (wire (path TOP 0.25400 57.50000 12.50000 58.87699 12.50000 58.95387 12.57688) (net "GND")
+   (type protect))
+   (wire (path TOP 0.25400 57.50000 12.50000 57.50000 17.46000) (net "GND") (type protect)
+  )
+   (wire (path TOP 0.25400 52.50000 12.34000 52.64538 12.19462 57.22054 12.19462 57.50000 12.47408
+   57.50000 12.50000) (net "GND") (type protect))
+   (wire (path TOP 0.25400 67.50000 19.84000 67.50000 12.66000 67.66000 12.50000) (net "I-SIGNAL OUTPUT")
+   (type protect))
+   (wire (path TOP 0.25400 67.50000 19.84000 67.66000 20.00000 72.50000 20.00000) (net "I-SIGNAL OUTPUT")
+   (type protect))
+   (wire (path TOP 0.25400 75.04000 13.63932 75.04000 20.00000) (net "GND") (type protect)
+  )
+   (wire (path TOP 0.25400 75.04000 13.63932 75.04000 11.98625 76.11530 10.91095 78.02777 10.91095
+    78.56565 11.44883 78.56565 14.79565 80.00000 16.23000) (net "GND") (type protect)
+  )
+   (wire (path TOP 0.25400 57.50000 12.50000 58.36308 11.61100 59.66348 10.31060 71.71128 10.31060
+   75.04000 13.63932) (net "GND") (type protect))
+   (wire (path TOP 0.25400 67.50000 52.66000 66.12080 52.66000 62.40160 48.94080 55.49280 48.94080
+    54.37520 50.05840 45.43440 50.05840 43.70720 48.33120 43.70720 27.90960 43.70720 12.36480
+    46.95840 9.11360 56.71200 9.11360 78.65760 9.11360 81.19760 11.65360 84.34720 14.80320
+    84.34720 19.07040 80.30040 19.07040 80.00000 18.77000) (net "Q-SIGNAL OUTPUT") (type protect)
+  )
+   (wire (path TOP 0.25400 67.50000 42.50000 72.34000 42.50000 72.50000 42.34000) (net "PHASE SHIFTED OSC")
+   (type protect))
+   (wire (path TOP 0.25400 67.50000 37.50000 67.50000 42.50000) (net "PHASE SHIFTED OSC")
+   (type protect))
+   (wire (path TOP 0.25400 73.77000 21.27000 73.28545 21.75455 73.28545 30.05450 76.22650 32.99555
+    76.22650 52.60256 73.82906 55.00000 57.66000 55.00000) (net "#00026") (type protect)
+  )
+   (wire (path BOT 0.25400 52.50000 22.50000 52.50000 24.96000 51.23000 26.23000) (net "#00064")
+   (type protect))
+   (wire (path BOT 0.25400 49.07465 27.56387 47.50000 25.98922 47.50000 22.66000) (net "#00062")
+   (type protect))
+   (wire (path BOT 0.25400 47.50000 32.50000 47.50000 29.13852 49.07465 27.56387) (net "#00062")
+   (type protect))
+   (wire (path BOT 0.25400 49.07465 27.56387 52.43613 27.56387 52.50000 27.50000) (net "#00062")
+   (type protect))
+   (wire (path BOT 0.25400 52.50000 32.34000 51.23000 31.07000 51.23000 28.77000) (net "#00063")
+   (type protect))
+   (wire (path BOT 0.25400 47.50000 42.66000 52.34000 42.66000 52.50000 42.50000) (net "POWER")
+   (type protect))
+   (wire (path BOT 0.25400 62.50000 35.00000 62.21200 35.22443) (net "REAL OSC") (type protect)
+  )
+   (wire (path BOT 0.25400 62.50000 35.00000 62.50000 30.00000) (net "REAL OSC") (type protect)
+  )
+   (wire (path BOT 0.25400 52.50000 32.34000 52.50000 35.00000 57.50000 40.00000) (net "#00063")
+   (type protect))
+   (wire (path BOT 0.25400 57.50000 37.46000 57.50000 30.04000) (net "#00067") (type protect)
+  )
+   (wire (path BOT 0.25400 62.50000 30.00000 67.50000 30.00000) (net "REAL OSC") (type protect)
+  )
+  (via PS3 62.21200 35.22443 (net "REAL OSC"))
+  (via PS3 58.95387 12.57688 (net "GND"))
+ )
+)
